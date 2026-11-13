@@ -1,15 +1,664 @@
-boda-stefany-noelia/
-│
-├── index.html
-├── styles.css
-├── script.js
-│
-└── assets/
-    ├── invitacion.jpg
-    ├── foto-01.jpg
-    ├── foto-02.jpg
-    ├── foto-03.jpg
-    ├── foto-04.jpg
-    ├── foto-05.jpg
-    ├── foto-06.jpg
-    └── melodia-boda-original.wav
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stefany & Noelia · Nos casamos</title>
+
+    <meta name="description"
+        content="Stefany & Noelia · 30 de mayo de 2027 · Hotel Mar de Fulles">
+
+    <meta property="og:title" content="Stefany & Noelia · Nos casamos">
+    <meta property="og:description"
+        content="30 de mayo de 2027 · Hotel Mar de Fulles · Alfondeguilla, Castellón">
+    <meta property="og:image" content="assets/invitacion.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- INTRO -->
+
+<div id="preloader" class="preloader">
+    <div class="monogram">S <span>&</span> N</div>
+    <div class="loading-line"></div>
+</div>
+
+
+<!-- MÚSICA -->
+
+<button id="musicBtn" class="music" type="button">
+    <span>♫</span>
+    <small>Música</small>
+</button>
+
+<audio id="music" loop>
+    <source src="assets/melodia-boda-original.wav" type="audio/wav">
+</audio>
+
+
+<!-- MENÚ -->
+
+<header id="header" class="site-header">
+
+    <nav class="nav">
+
+        <a href="#inicio" class="mini-logo">
+            S <i>&</i> N
+        </a>
+
+        <button id="menuBtn" class="menu">
+            ☰
+        </button>
+
+        <div id="nav" class="nav-links">
+
+            <a href="#historia">Nuestra historia</a>
+            <a href="#dia">El gran día</a>
+            <a href="#cuenta">Cuenta atrás</a>
+            <a href="#rsvp">Confirmación</a>
+            <a href="#regalos">Regalos</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+<!-- PORTADA -->
+
+<section id="inicio" class="hero">
+
+    <div class="hero-bg"></div>
+    <div class="hero-wash"></div>
+
+    <div class="hero-inner">
+
+        <p class="kicker">
+            CON MUCHO AMOR
+        </p>
+
+        <h1>
+            Stefany <span>&</span> Noelia
+        </h1>
+
+        <div class="hero-rule">
+
+            <b></b>
+
+            <span>
+                30 · 05 · 2027
+            </span>
+
+            <b></b>
+
+        </div>
+
+        <p class="venue">
+            Hotel Mar de Fulles · Alfondeguilla, Castellón
+        </p>
+
+        <a href="#historia" class="button light">
+            Nuestra historia comienza aquí
+            <strong>↓</strong>
+        </a>
+
+    </div>
+
+    <div class="scroll">
+        DESLIZA ↓
+    </div>
+
+</section>
+
+
+<!-- HISTORIA -->
+
+<section id="historia" class="section story-intro">
+
+    <div class="leaf leaf-a">❧</div>
+    <div class="leaf leaf-b">❧</div>
+
+    <div class="content narrow center">
+
+        <p class="kicker olive">
+            NUESTRA HISTORIA
+        </p>
+
+        <h2 class="script">
+            Dos caminos, una historia.
+        </h2>
+
+        <p class="lead">
+            Hay encuentros que parecen casualidad y terminan
+            convirtiéndose en hogar.
+
+            El nuestro nos trajo hasta aquí:
+            a elegirnos, cuidarnos y celebrar que queremos
+            compartir la vida.
+        </p>
+
+        <div class="ornament">
+            — <span>♡</span> —
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- HISTORIA + FOTOS -->
+
+<section class="section memories">
+
+    <div class="content story-grid">
+
+        <div class="story-copy reveal">
+
+            <span class="number">
+                01
+            </span>
+
+            <p class="kicker olive">
+                EL COMIENZO
+            </p>
+
+            <h2>
+                Cuando todo empezó
+            </h2>
+
+            <p>
+                Nos conocimos y, casi sin darnos cuenta,
+                comenzamos a construir una historia hecha de
+                conversaciones, risas, viajes, pequeños detalles
+                y muchas ganas de estar juntas.
+            </p>
+
+            <p>
+                Desde entonces, cada día ha sido una nueva
+                razón para elegirnos.
+            </p>
+
+        </div>
+
+
+        <figure class="photo reveal">
+
+            <img
+                src="assets/foto-01.jpg"
+                alt="Stefany y Noelia">
+
+        </figure>
+
+
+        <figure class="photo tall reveal">
+
+            <img
+                src="assets/foto-03.jpg"
+                alt="Stefany y Noelia en la playa">
+
+        </figure>
+
+
+        <div class="story-copy reveal">
+
+            <span class="number">
+                02
+            </span>
+
+            <p class="kicker olive">
+                LO QUE SOMOS
+            </p>
+
+            <h2>
+                Un amor hecho de momentos
+            </h2>
+
+            <p>
+                De una flor encontrada por el camino a una
+                escapada, de una cerveza compartida a un beso
+                robado.
+
+                Son esos momentos sencillos los que han hecho
+                grande nuestra historia.
+            </p>
+
+            <p>
+                Y ahora queremos sumar uno más:
+                <em>nuestro gran día.</em>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALERÍA -->
+
+<section class="section gallery">
+
+    <div class="content">
+
+        <div class="center">
+
+            <p class="kicker olive">
+                NUESTROS RECUERDOS
+            </p>
+
+            <h2 class="section-title">
+                Un pedacito de nuestra historia
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <figure class="g1 reveal">
+                <img src="assets/foto-02.jpg"
+                    alt="Stefany y Noelia">
+            </figure>
+
+            <figure class="g2 reveal">
+                <img src="assets/foto-04.jpg"
+                    alt="Stefany y Noelia">
+            </figure>
+
+            <figure class="g3 reveal">
+                <img src="assets/foto-05.jpg"
+                    alt="Stefany y Noelia">
+            </figure>
+
+            <figure class="g4 reveal">
+                <img src="assets/foto-06.jpg"
+                    alt="Stefany y Noelia">
+            </figure>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GRAN DÍA -->
+
+<section id="dia" class="section day">
+
+    <div class="content">
+
+        <div class="center white">
+
+            <p class="kicker">
+                EL GRAN DÍA
+            </p>
+
+            <h2 class="section-title">
+                Domingo, 30 de mayo de 2027
+            </h2>
+
+            <p class="lead white-lead">
+                Queremos vivir este día rodeadas
+                de las personas que queremos.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <article class="event reveal">
+
+                <span>
+                    12:00 H
+                </span>
+
+                <h3>
+                    Ceremonia
+                </h3>
+
+                <p>
+                    El momento en que diremos
+                    <em>sí, quiero.</em>
+                </p>
+
+            </article>
+
+
+            <article class="event reveal">
+
+                <span>
+                    A CONTINUACIÓN
+                </span>
+
+                <h3>
+                    Cóctel
+                </h3>
+
+                <p>
+                    Brindaremos por el comienzo
+                    de esta nueva etapa.
+                </p>
+
+            </article>
+
+
+            <article class="event reveal">
+
+                <span>
+                    DESPUÉS
+                </span>
+
+                <h3>
+                    Comida
+                </h3>
+
+                <p>
+                    Una mesa para compartir,
+                    reír y celebrar.
+                </p>
+
+            </article>
+
+
+            <article class="event reveal">
+
+                <span>
+                    Y PARA TERMINAR
+                </span>
+
+                <h3>
+                    ¡Fiesta!
+                </h3>
+
+                <p>
+                    Porque una historia así merece
+                    bailar hasta el final.
+                </p>
+
+            </article>
+
+        </div>
+
+
+        <!-- UBICACIÓN -->
+
+        <div class="place reveal">
+
+            <div class="place-copy">
+
+                <p class="kicker">
+                    NOS VEMOS EN
+                </p>
+
+                <h2>
+                    Hotel Mar de Fulles
+                </h2>
+
+                <p>
+                    Polígono 5, Parcela 69<br>
+                    12609 Alfondeguilla, Castellón
+                </p>
+
+                <a
+                    class="button gold"
+                    target="_blank"
+                    href="https://www.google.com/maps/search/?api=1&query=Hotel%20Mar%20de%20Fulles%2C%20Alfondeguilla%2C%20Castell%C3%B3n">
+
+                    Cómo llegar
+
+                </a>
+
+            </div>
+
+
+            <div class="map">
+
+                <iframe
+                    title="Mapa Hotel Mar de Fulles"
+                    loading="lazy"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.307%2C39.800%2C-0.274%2C39.828&layer=mapnik&marker=39.817227%2C-0.29045">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CUENTA ATRÁS -->
+
+<section id="cuenta" class="section countdown">
+
+    <div class="content center">
+
+        <p class="kicker olive">
+            FALTAN...
+        </p>
+
+        <h2 class="script">
+            Hasta nuestro gran día
+        </h2>
+
+        <div id="count" class="count">
+
+            <div>
+                <b id="days">000</b>
+                <span>DÍAS</span>
+            </div>
+
+            <div>
+                <b id="hours">00</b>
+                <span>HORAS</span>
+            </div>
+
+            <div>
+                <b id="minutes">00</b>
+                <span>MINUTOS</span>
+            </div>
+
+            <div>
+                <b id="seconds">00</b>
+                <span>SEGUNDOS</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONFIRMACIÓN -->
+
+<section id="rsvp" class="section rsvp">
+
+    <div class="content rsvp-grid">
+
+        <div class="rsvp-copy reveal">
+
+            <p class="kicker olive">
+                ¿CONTAMOS CONTIGO?
+            </p>
+
+            <h2>
+                Confirma tu asistencia
+            </h2>
+
+            <p>
+                Nos haría muy felices compartir este día contigo.
+                Confirma tu asistencia, acompañantes y cualquier
+                alergia o restricción alimentaria.
+            </p>
+
+            <p>
+                <strong>
+                    Fecha límite: 30 de abril de 2027.
+                </strong>
+            </p>
+
+            <a
+                class="button olive-button"
+                target="_blank"
+                href="https://forms.gle/oM4u7sLy4NAiF7FbA">
+
+                Confirmar asistencia ↗
+
+            </a>
+
+        </div>
+
+
+        <div class="rsvp-card reveal">
+
+            <div class="rsvp-card-top">
+                RSVP <span>♡</span>
+            </div>
+
+            <div class="rsvp-placeholder">
+
+                <div class="check">
+                    ✓
+                </div>
+
+                <h3>
+                    Tu respuesta nos importa
+                </h3>
+
+                <p>
+                    Haz clic para abrir el formulario
+                    oficial de confirmación.
+                </p>
+
+                <a
+                    class="button olive-button"
+                    target="_blank"
+                    href="https://forms.gle/oM4u7sLy4NAiF7FbA">
+
+                    Abrir formulario
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REGALOS -->
+
+<section id="regalos" class="section gifts">
+
+    <div class="content narrow center">
+
+        <p class="kicker olive">
+            UN PEQUEÑO DETALLE
+        </p>
+
+        <h2 class="script">
+            Lo más importante es que estés.
+        </h2>
+
+        <p class="lead">
+            Si además queréis tener un detalle con nosotras,
+            podéis hacerlo a través de la siguiente cuenta.
+            Y si preferís otro tipo de regalo,
+            consultadlo con nosotras.
+        </p>
+
+
+        <div class="account">
+
+            <small>
+                CUENTA BANCARIA
+            </small>
+
+            <strong id="iban">
+                ES96 2100 6299 0702 0013 1146
+            </strong>
+
+            <button id="copy">
+                Copiar número de cuenta
+            </button>
+
+            <em id="copied"></em>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DESPEDIDA -->
+
+<section class="closing">
+
+    <div class="closing-bg"></div>
+    <div class="closing-overlay"></div>
+
+    <div class="closing-content content center white">
+
+        <div class="infinity">
+            ∞
+        </div>
+
+        <p class="kicker">
+            Y DESPUÉS...
+        </p>
+
+        <h2 class="script white-script">
+            Que la vida nos encuentre siempre juntas.
+        </h2>
+
+        <p class="closing-lead">
+            Gracias por formar parte de nuestra historia
+            y por acompañarnos en uno de los días más
+            importantes de nuestras vidas.
+        </p>
+
+        <div class="signature">
+            Stefany <span>&</span> Noelia
+        </div>
+
+        <a href="#inicio" class="button light">
+            Volver arriba ↑
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer>
+    Con todo nuestro amor · Stefany & Noelia · 30.05.2027
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
